@@ -1,0 +1,212 @@
+body, html {
+  width:100%;
+  background-color: #f7f7f7 !important;
+}
+*, *:after, *:before {
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+transition: .5s ease-in-out;
+}
+
+
+/*Стили для входа/регестрации*/
+.checkIn {
+  width:100%;
+  background-image: url("../img/header3.jpg");
+  min-height: 200px;
+  margin-top: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.signIn{
+  width: 60%;
+  height: 20%;
+  position: absolute;
+  margin: 2% 20%;
+  margin-top: 2%;
+  font-family: 'Lato', Calibri, Arial, sans-serif;
+  color: black;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+.signIn p{
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #fff;
+}
+.signIn input[type=text],
+.signIn input[type=password] {
+    width: 100%;
+    height: 50px;
+    border: none;  
+    background: rgba(255,255,255,0.2);
+    box-shadow: 0 0 10px rgba(255,255,255,0.5);
+    font-family: Arial, sans-serif;
+    color: #BDB76B;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+    font-size: 20px;      
+}
+.signIn button{
+    width: 100%;
+    height: 33px;
+    float: left;
+    margin-top: 5%;
+}
+
+button{
+    box-shadow: inset 0 1px rgba(255,255,255,0.3);
+    border-radius: 3px;
+    margin-right: 1%;
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    background: linear-gradient(#34a5cf, #2a8ac4);
+    border: 1px solid #2b8bc7;
+    color: #ffffff;
+    text-shadow: 0 -1px rgba(0,0,0,0.3);
+    text-decoration: none;
+}
+
+
+
+/*Стили для верхней навигации*/
+ul {
+  list-style: none;
+}
+.logo{
+  float: center;
+  margin-right: 5%
+}
+
+.logo img{
+  width: 45px;
+  margin-top: 20px;
+  margin-left: 45%;
+}
+
+.navbar li a {
+  float: center;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 2% 3%;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: 600;
+  font-size: 17px;
+  margin-left: 5%;
+}
+
+.navbar li a:hover {
+  background: #ddd;
+  color: black;
+}
+
+
+
+
+/*Стили для фоток-основного контента*/
+.content{
+  width: 70%;
+  margin-left: 16.5%;
+}
+.content img{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display:inline-block;
+  border: 15px solid rgb(255, 228, 225, 0.4);
+  border-radius: 10px; 
+  margin: 12px;
+  margin-left: 0%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+
+/*Боковая панель навигации*/
+aside {
+  width: 100%;
+  float: none;
+}
+.widget {
+  padding: 20px 15px;
+  background: white;
+  font-size: 13px;
+  margin-bottom: 30px;
+  box-shadow: 3px 3px 1px rgba(0,0,0,.05);
+}
+.widget h3{
+  font-size: 25px;
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  border: 2px solid #696969;
+  box-shadow: 3px 3px 0 0 #808080;
+}
+.widget-list{
+  margin-bottom: 0px;
+  list-style: none;
+  font-size: 20px;
+  text-align: center;
+  
+}
+.widget-list li{
+  margin-bottom: 30px;
+
+}
+.widget-list li a {
+  color: #626262;
+  font-style: normal;
+  text-decoration: none;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+}
+
+
+
+/*Подвал*/
+footer {
+padding: 25px 0;
+width: 100%;
+background: rgb(160, 82, 45,0.5);
+color: white;
+letter-spacing: 3px;
+}
+.footer-col {
+width: 33.3333333333%;
+float: left;
+margin-left: 30px;
+margin-top: -10px;
+}
+.footer-col a {
+color: white;
+text-decoration: none;
+}
+.footer-col:last-child {
+text-align: right;
+}
+
+
+
+
+
+
+/* Для больших устройств*/
+@media (min-width: 769px) {
+
+  .checkIn{margin-bottom: 0;}
+ .content img {max-width: 28%; margin:12px;}
+ .content{margin-left: 30px;border: 30px; max-width: 65%; float: left; }
+ .navbar a {float:left;}
+ .signIn a{color:white;}
+  .logo{float: left;}
+  .logo img{width: 45px;margin-top: 20px;margin-left: 50px;}
+  aside {width: 27%;float: right;}
+  .signIn{margin: 2% 75%;width: 20%;}
+  .widget-category-list{text-align: left;}
+  footer{clear:both;}
+}
